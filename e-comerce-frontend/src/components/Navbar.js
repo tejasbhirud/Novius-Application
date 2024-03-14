@@ -28,7 +28,7 @@ const Navbar = ({click}) => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h2>JSOM-E-COMERCE</h2>
+        <h2>Novius Service</h2>
       </div>
 
       <ul className="navbar__links">
@@ -42,7 +42,7 @@ const Navbar = ({click}) => {
         </li>
 
         <li>
-          <Link to="/">Shop</Link>
+          <Link to="/">Services</Link>
         </li>
 
         {!user.userInfo.isLogin ? (

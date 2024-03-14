@@ -15,6 +15,24 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.homescreen__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #000; /* Change the color as needed */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.icon {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+
 @media (max-width: 1232px) {
   .homescreen__products {
     grid-template-columns: repeat(3, auto);

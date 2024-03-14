@@ -2,6 +2,8 @@ import "./Product.css";
 import { Link } from "react-router-dom";
 
 const Product = ({ imageUrl, description, price, name, productId }) => {
+
+  const productLink = `/http://www.novius.co.in/${productId}`;
   return (
     <div className="product">
       <img src={imageUrl} alt={name} />
@@ -13,9 +15,8 @@ const Product = ({ imageUrl, description, price, name, productId }) => {
 
         <p className="info__price">${price}</p>
 
-        <Link to={`/product/${productId}`} className="info__button">
-          View
-        </Link>
+        <a class="info__button" href="http://www.novius.co.in/">View</a>
+
       </div>
     </div>
   );
